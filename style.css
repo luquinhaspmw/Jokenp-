@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background: #03004D;
+}
+
+.container {
+  -webkit-box-shadow: 0px 0px 50px #0800EB;
+          box-shadow: 0px 0px 50px #0800EB;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, blue), color-stop(60%, #ffd70db2));
+  background: linear-gradient(to bottom, blue 10%, #ffd70db2 60%);
+  width: 80%;
+  height: 650px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.container .frame_1 {
+  background-color: blue;
+  height: 50%;
+  width: 100%;
+}
+
+.container .frame_1 .header {
+  background-color: #53c506;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5px 0px;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.39);
+}
+
+.container .frame_1 .header .item {
+  font-family: monospace,Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.container .frame_1 .header .item #pontos-pc, .container .frame_1 .header .item #pontos-user {
+  color: white;
+}
+
+.container .frame_1 .main {
+  height: 90%;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.container .frame_1 .main .options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  border-radius: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .frame_1 .main .options .imagem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container .frame_1 .main .options .imagem img {
+  width: 100px;
+}
+
+.container .frame_1 .main .options .imagem img:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.container .frame_2 {
+  width: 100%;
+}
+
+.container .frame_2 .container-1 {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .frame_2 .container-1 .personagem {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  max-height: 400px;
+  border-right: 1px solid black;
+  margin-top: 20px;
+}
+
+.container .frame_2 .container-1 .personagem .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.container .frame_2 .container-1 .personagem .image img {
+  width: 200px;
+}
+
+.container .frame_2 .container-1 .escolher_personagem {
+  width: 50%;
+  text-align: center;
+}
+
+.container .frame_2 .container-1 .escolher_personagem h2 {
+  margin-bottom: 20px;
+  color: #03004D;
+}
+
+.container .frame_2 .container-1 .escolher_personagem #select {
+  /* appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none; */
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px #1800EB;
+          box-shadow: 0px 0px 10px #1800EB;
+  outline: none;
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .frame_2 .container-1 .escolher_personagem #select option {
+  background-color: #1800EB;
+  color: white;
+}
+
+.container .frame_2 .container-1 .escolher_personagem #play {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 30px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  background-color: #03004D;
+  color: white;
+  -webkit-box-shadow: 0px 0px 10px #03004D;
+          box-shadow: 0px 0px 10px #03004D;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.container .frame_2 .container-1 .escolher_personagem #play:hover {
+  background-color: #1800EB;
+}
+
+.container .frame_2 .container-2 {
+  width: 100%;
+  height: 300px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .frame_2 .container-2 .personagem, .container .frame_2 .container-2 .user {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  max-height: 400px;
+  margin-top: 20px;
+}
+
+.container .frame_2 .container-2 .personagem h2, .container .frame_2 .container-2 .user h2 {
+  text-align: center;
+}
+
+.container .frame_2 .container-2 .personagem .image, .container .frame_2 .container-2 .user .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.container .frame_2 .container-2 .personagem .image img, .container .frame_2 .container-2 .user .image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .container .frame_1 .main .options {
+    width: 99%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

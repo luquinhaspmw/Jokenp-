@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô | 1.0</title>
+</head>
+<body>
+    <section class="container">
+        <div class="frame_1">
+            <div class="header">
+                    <div class="item">
+                        <p id="nome_user"></p>
+                    </div>
+                    <div class="item">
+                        <p id="nome_personagem"></p>
+                    </div>
+            </div>
+            <div class="main">
+                <div class="options">
+                    <div class="imagem"><img id="pedra" src="imgs/pedra.png" alt=""></div>
+                    <div class="imagem"><img id="papel" src="imgs/papel.png" alt=""></div>
+                    <div class="imagem"><img id="tesoura" src="imgs/tesoura.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="frame_2">
+            <div class="container-1">
+                <div class="personagem">
+                    <div class="image">
+                        <img class="imagem_personagem" src="imgs/zoro.png">
+                    </div>
+                </div>
+                <div class="escolher_personagem">
+                    <h2>Escolha contra quem você vai jogar...</h2>
+                    <select id="select">
+                    </select>
+                    <br>
+                    <button id="play">Jogar</button>
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="user">
+                    <div class="image">
+                        <img src="imgs/user.png">
+                    </div>
+                    <h2 id="escolha_user"></h2>
+                </div>
+                <div class="personagem">
+                    <div class="image">
+                        <img class="imagem_personagem" src="">
+                    </div>
+                    <h2 id="escolha_personagem"></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
